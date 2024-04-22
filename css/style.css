@@ -1,0 +1,148 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Open Sans', sans-serif;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-block:100px;
+    background-color:#CF1C26;
+}
+
+.game-board {
+    width:80%;
+    height:500px;
+    border-bottom:20px solid #22A029;
+    border-radius: 20px;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(#87CEEB, #E0F6FF)
+}
+
+#score {
+    height:0;
+    width:0;
+    position:absolute;
+    top:10px;
+    right:0;
+    margin-right:150px;
+    font-size:20px;
+}
+
+#score-gameover{
+    margin-top:10px;
+    color:#fff;
+
+}
+
+#gameover {
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:;
+    position:absolute;
+    //left:calc(50% - 180px);
+    //top:calc(50% - 40px);
+    width:100%;
+    height:500px;
+    //padding-top:120px;
+    background-color:rgba(0,0,0,0.8);
+    color:#e37a12;
+}
+#gameover p {
+    font-size:100px;
+    font-weight:700;
+}
+#gameover span {
+    font-size:18px;
+    font-weight:700;
+}
+#gameover-title{
+    display:flex;
+    align-items:center;
+}
+
+.bowser {
+    width:120px;
+    height:120px;
+}
+
+.mario {
+    width:120px;
+    position:absolute;
+    //z-index:999;
+    bottom:0px;
+    margin-left:-10px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.pipe {
+    position:absolute;
+    //z-index:10;
+    bottom:0;
+    width:80px;
+    animation: pipe-animation 2s infinite linear;
+
+}
+.clouds {
+    //display:none;
+    position:absolute;
+    top:0;
+    margin-top:20px;
+    width:500px;
+    animation: clouds-animation 15s infinite linear;
+}
+
+
+@keyframes pipe-animation {
+    from {
+        right:-80px;
+    }
+    to {
+        right:100%;
+    }
+}
+
+@keyframes jump {
+    0%{
+        bottom:0;
+    }
+    40%{
+        bottom:140px;
+    }
+    50%{
+        bottom:140px;
+    }
+    60%{
+        bottom:140px;
+    }
+    100%{
+        bottom:0
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation2 {
+    from {
+        right: -600px;
+    }
+    to {
+        right: 100%;
+    }
+}
