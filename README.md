@@ -13,6 +13,10 @@ This code is about my first game in javascript similar to google dinosaur runnin
 
  ### ⚙ Layout e Functions
 
+ <b>How to play</b>
+ Basically, just tap Enter and the character will jump, to reset game tap F5, this game is not compatible to Mobile .... YET ! 
+ 
+
 <img src="./images/Captura de tela 2024-04-22 105740.png" alt="game view">
 <img src="./images/Captura de tela 2024-04-22 105823.png" alt="game over view">
 
@@ -27,7 +31,7 @@ This code is about my first game in javascript similar to google dinosaur runnin
 
 
 ## 🖥 Link to access the site
-
+https://mariobrosrunninggame.netlify.app/
 
 
 <p align="center">Copyright © 2024 nathanparente</p>
